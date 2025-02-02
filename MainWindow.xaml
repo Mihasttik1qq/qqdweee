@@ -1,0 +1,39 @@
+﻿<Window x:Class="FindWorker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Find Worker" Height="600" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Background="White" Margin="0,0,-200,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Верхняя панель -->
+        <Border Background="DarkGray" Height="50" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Image Margin="0,-4,0,0" Source="/{DFC48A3E-5454-40BE-A572-CB118406479D}.png" Stretch="Fill"/>
+        </Border>
+
+        <!-- Основное содержимое -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="200,0,0,0">
+            <TextBlock Text="Я ищу работу" FontSize="16" FontWeight="Bold" Margin="0,10,0,5" TextAlignment="Center"/>
+
+            <TextBlock Text="Email:"/>
+            <TextBox Name="EmailTextBox" Width="200"/>
+
+            <TextBlock Text="Password:"/>
+            <PasswordBox Name="PasswordBox" Width="200"/>
+
+            <CheckBox Content="Запомнить меня"/>
+
+            <Button Content="Войти" Background="Red" Foreground="White" Width="200" Height="30" Click="LoginButton_Click"/>
+
+            <TextBlock Text="Регистрация" Foreground="Blue" TextAlignment="Center" Margin="5" Cursor="Hand"/>
+
+            <TextBlock Text="Или" FontSize="14" FontWeight="Bold" TextAlignment="Center" Margin="5"/>
+
+            <Button Content="Я ищу сотрудника" Background="Red" Foreground="White" Width="200" Height="30"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
